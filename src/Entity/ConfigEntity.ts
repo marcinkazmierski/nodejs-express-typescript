@@ -1,8 +1,7 @@
 export class ConfigEntity {
     private databaseHost: string;
 
-
-    getGatabaseHost(): string {
+    getDatabaseHost(): string {
         return this.databaseHost;
     }
 

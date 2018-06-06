@@ -18,7 +18,7 @@ class App {
         this.app = express();
         this.routes.routes(this.app);
         const entity = this.config.load();
-        console.log(entity.getGatabaseHost());
+        console.log(entity.getDatabaseHost());
     }
 }
 
