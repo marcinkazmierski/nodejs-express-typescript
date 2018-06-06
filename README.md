@@ -8,39 +8,10 @@ pug - silnik szablonów html
 cookie-parser - moduł do obsługi cookies
 body-parser - moduł do obsługi requestów typu POST
 connect-flash - moduł do komunikatów flash w aplikacji
- 
 
-## przykład
+
+## DI
 ```
-const express = require('express');
-const app = new express();
-
-app.get('/', function (req, res, next) {
-    res.json({
-        'status': 'success 2'
-    });
-});
-
-app.listen(8082, () => {
-    console.log('Start');
-});
-
-
-```
-
-https://www.youtube.com/channel/UC_MIaHmSkt9JHNZfQ_gUmrg/videos
-https://automationrhapsody.com/build-rest-api-express-node-js-run-docker/
-https://github.com/didinj/express-api-example
-
-
-```
-
-const file = __dirname + '/config/config.yml';
-let s = new ConfigService();
-const config = s.load(file);
-
-console.log(config);
-
 
 abstract class PersonAbstract {
     abstract get(id: string): PersonDAO;
